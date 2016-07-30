@@ -1,13 +1,27 @@
+/*
+  ========================================
+  Body
+  ========================================
+*/
+
 body {
     background: #fcfaf2;
+    background: -webkit-linear-gradient(#fcfaf2, #ECE9E6);
+    background: -o-linear-gradient(#fcfaf2, #ECE9E6);
+    background: linear-gradient(#fcfaf2 20%, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     line-height: 1.6;
+    color: #333;
+    font-family: 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
+}
+
+.container {
     max-width: 960px;
     margin: 0 auto;
 }
-
 main {
     width: 70%;
     float: left;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -15,6 +29,12 @@ aside {
     float: right;
 
 }
+
+/*
+  ========================================
+  Heading
+  ========================================
+*/
 
 h1 {
     font: 400 60px/60px 'Gentium Book Basic', serif;
@@ -24,7 +44,7 @@ h1 {
 .page-header {
     text-align: center;
 }
-.page-header span {
+span#eastern-ocean {
     padding: 0 20px;
     background: #fcfaf2;
     position: relative;
@@ -33,16 +53,28 @@ h1 {
 
 .page-header h2 {
     border-top: 1px solid #222;
-    color: #222;
+    color: #333;
     font: 800 34px/34px 'open sans';
     text-transform: uppercase;
     text-align: center;
 
 }
 
+/*
+  ========================================
+  Paragraph
+  ========================================
+*/
+
 p {
-    font: 400 16px/24px 'gentium book basic';
+    font: 400 16px/24px 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
 }
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
 
 #hongwu {
     max-width: 40%;
@@ -54,14 +86,47 @@ p {
 max-width: 100%;
 }
 
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+nav ul {
+    padding-top: 250px;
+}
 nav li {
     list-style: none;
     text-decoration: none;
 }
 
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+    color: #c90707;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #next {
     float: right;
 }
+span.arrow {
+    font-size: 1.1em;
+}
+
+/*
+  ========================================
+  Media Quieries
+  ========================================
+*/
 
 @media only screen
   and (min-device-width: 767px)
@@ -106,4 +171,15 @@ aside {
     float: none;
 }
 
+nav ul {
+    padding-top: 0;
+}
+}
+
+.row {
+    width: 100%;
+    background: #2A2C39;
+	padding: 24px 0;
+    clear: both;
+    margin-top: 100px;
 }
