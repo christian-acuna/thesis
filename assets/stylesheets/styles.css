@@ -11,6 +11,7 @@ body {
     background: linear-gradient(#fcfaf2 20%, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     line-height: 1.6;
     color: #333;
+    font-family: 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
 }
 
 .container {
@@ -20,6 +21,7 @@ body {
 main {
     width: 70%;
     float: left;
+    margin-bottom: 20px;
 }
 
 aside {
@@ -65,7 +67,7 @@ span#eastern-ocean {
 */
 
 p {
-    font: 400 16px/24px 'gentium book basic';
+    font: 400 16px/24px 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
 }
 
 /*
@@ -109,12 +111,15 @@ a {
     text-decoration: none;
 }
 
-nav li a:hover {
-
+a:hover {
+    text-decoration: underline;
 }
 
 #next {
     float: right;
+}
+span.arrow {
+    font-size: 1.1em;
 }
 
 /*
@@ -174,6 +179,7 @@ nav ul {
 .row {
     width: 100%;
     background: #2A2C39;
-	padding: 66px 0 44px 0;
+	padding: 24px 0;
     clear: both;
+    margin-top: 100px;
 }
