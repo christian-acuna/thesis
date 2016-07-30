@@ -1,3 +1,9 @@
+/*
+  ========================================
+  Body
+  ========================================
+*/
+
 body {
     background: #fcfaf2;
     background: -webkit-linear-gradient(#fcfaf2, #ECE9E6);
@@ -22,6 +28,12 @@ aside {
 
 }
 
+/*
+  ========================================
+  Heading
+  ========================================
+*/
+
 h1 {
     font: 400 60px/60px 'Gentium Book Basic', serif;
     font-style: italic;
@@ -37,8 +49,6 @@ span#eastern-ocean {
     top: -20px;
 }
 
-
-
 .page-header h2 {
     border-top: 1px solid #222;
     color: #333;
@@ -48,9 +58,21 @@ span#eastern-ocean {
 
 }
 
+/*
+  ========================================
+  Paragraph
+  ========================================
+*/
+
 p {
     font: 400 16px/24px 'gentium book basic';
 }
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
 
 #hongwu {
     max-width: 40%;
@@ -62,6 +84,12 @@ p {
 max-width: 100%;
 }
 
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
 nav ul {
     padding-top: 250px;
 }
@@ -69,6 +97,12 @@ nav li {
     list-style: none;
     text-decoration: none;
 }
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
 
 a {
     color: #c90707;
@@ -82,6 +116,12 @@ nav li a:hover {
 #next {
     float: right;
 }
+
+/*
+  ========================================
+  Media Quieries
+  ========================================
+*/
 
 @media only screen
   and (min-device-width: 767px)
