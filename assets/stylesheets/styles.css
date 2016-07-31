@@ -234,6 +234,16 @@ span.arrow {
     margin : 0 auto;
   }
 
+  footer {
+      width: 70%;
+      padding-left: 0;
+      margin: 0 auto;
+  }
+
+  footer ol {
+      width: 100%;
+  }
+
   #hongwu {
     max-width : 70%;
     float     : none;
