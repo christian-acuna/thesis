@@ -60,7 +60,7 @@ h1 {
   background : #fcfaf2;
 }
 
-.page-header {
+.page-header h2 {
   color          : #333;
   border-top     : 1px solid #222;
   text-align     : center;
@@ -68,6 +68,22 @@ h1 {
   font           : 800 34px/34px 'open sans';
 }
 
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+footer {
+    color: #fcfaf2;
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer ol {
+    width: 70%;
+    padding-left: 0;
+}
 /*
   ========================================
   Paragraph
