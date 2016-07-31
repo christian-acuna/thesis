@@ -94,7 +94,7 @@ a[aria-describedby="footnote-label"]:hover {
 a[aria-describedby="footnote-label"]::after {
     content: '[' counter(footnotes) ']';
     vertical-align: super;
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin-left: 2px;
     color: #c90707;
     text-decoration: underline;
@@ -104,6 +104,10 @@ a[aria-describedby="footnote-label"]::after {
 a[aria-describedby="footnote-label"]:focus::after {
     outline: thin dotted;
     outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-size: 0.8em;
 }
 
 /*
