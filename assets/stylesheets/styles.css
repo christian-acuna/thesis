@@ -5,29 +5,36 @@
 */
 
 body {
-    background: #fcfaf2;
-    background: -webkit-linear-gradient(#fcfaf2, #ECE9E6);
-    background: -o-linear-gradient(#fcfaf2, #ECE9E6);
-    background: linear-gradient(#fcfaf2 20%, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    line-height: 1.6;
-    color: #333;
-    font-family: 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
+  color       : #333;
+  background  : #fcfaf2;
+  background  : -o-linear-gradient(#fcfaf2, #ECE9E6);
+  background  : -webkit-linear-gradient(#fcfaf2, #ECE9E6);
+  background  : linear-gradient(#fcfaf2 20%, #ECE9E6);
+  font-family : 'gentium book basic',
+                "KaiTi",
+                "楷体",
+                "STKaiti",
+                "华文楷体",
+                sans-serif;
+  line-height : 1.6;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width : 960px;
+  margin    : 0 auto;
 }
+
 main {
-    width: 70%;
-    float: left;
-    margin-bottom: 20px;
+  width         : 70%;
+  float         : left;
+  margin-bottom : 20px;
 }
 
 aside {
-    width: 30%;
-    float: right;
-
+  width : 30%;
+  float : right;
 }
 
 /*
@@ -37,27 +44,28 @@ aside {
 */
 
 h1 {
-    font: 400 60px/60px 'Gentium Book Basic', serif;
-    font-style: italic;
+  font       : 400 60px/60px 'Gentium Book Basic',
+               serif;
+  font-style : italic;
 }
 
 .page-header {
-    text-align: center;
-}
-span#eastern-ocean {
-    padding: 0 20px;
-    background: #fcfaf2;
-    position: relative;
-    top: -20px;
+  text-align : center;
 }
 
-.page-header h2 {
-    border-top: 1px solid #222;
-    color: #333;
-    font: 800 34px/34px 'open sans';
-    text-transform: uppercase;
-    text-align: center;
+#eastern-ocean {
+  position   : relative;
+  top        : -20px;
+  padding    : 0 20px;
+  background : #fcfaf2;
+}
 
+.page-header {
+  color          : #333;
+  border-top     : 1px solid #222;
+  text-align     : center;
+  text-transform : uppercase;
+  font           : 800 34px/34px 'open sans';
 }
 
 /*
@@ -67,7 +75,12 @@ span#eastern-ocean {
 */
 
 p {
-    font: 400 16px/24px 'gentium book basic', "KaiTi", "楷体", "STKaiti", "华文楷体", sans-serif;
+  font : 400 16px/24px 'gentium book basic',
+         "KaiTi",
+         "楷体",
+         "STKaiti",
+         "华文楷体",
+         sans-serif;
 }
 
 /*
@@ -77,13 +90,13 @@ p {
 */
 
 #hongwu {
-    max-width: 40%;
-    float: right;
-    margin-top: 7px;
+  max-width  : 40%;
+  float      : right;
+  margin-top : 7px;
 }
 
 #hongwu img {
-max-width: 100%;
+  max-width : 100%;
 }
 
 /*
@@ -93,11 +106,12 @@ max-width: 100%;
 */
 
 nav ul {
-    padding-top: 250px;
+  padding-top : 250px;
 }
+
 nav li {
-    list-style: none;
-    text-decoration: none;
+  text-decoration : none;
+  list-style      : none;
 }
 
 /*
@@ -107,19 +121,20 @@ nav li {
 */
 
 a {
-    color: #c90707;
-    text-decoration: none;
+  color           : #c90707;
+  text-decoration : none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration : underline;
 }
 
 #next {
-    float: right;
+  float : right;
 }
+
 span.arrow {
-    font-size: 1.1em;
+  font-size : 1.1em;
 }
 
 /*
@@ -129,57 +144,56 @@ span.arrow {
 */
 
 @media only screen
-  and (min-device-width: 767px)
-  and (max-device-width: 1024px)
-   {
-    main {
-    width: 70%;
-    float: none;
-    margin: 0 auto;
+       and (min-device-width : 767px)
+       and (max-device-width : 1024px) {
+  main {
+    width  : 70%;
+    float  : none;
+    margin : 0 auto;
+  }
+
+  aside {
+    width  : 70%;
+    float  : none;
+    margin : 0 auto;
+  }
+
+  #hongwu {
+    max-width : 70%;
+    float     : none;
+    margin    : 0 auto;
+  }
 }
 
-aside {
-    width: 70%;
-    float: none;
-    margin: 0 auto;
-}
+@media screen
+       and (max-width : 970px) {
+  main {
+    width  : 70%;
+    float  : none;
+    margin : 0 auto;
+  }
 
-#hongwu {
-    max-width: 70%;
-    margin: 0 auto;
-    float: none;
-}
+  aside {
+    width  : 70%;
+    float  : none;
+    margin : 0 auto;
+  }
 
-}
+  #hongwu {
+    max-width : 70%;
+    float     : none;
+    margin    : 0 auto;
+  }
 
-@media screen and (max-width: 970px) {
-    main {
-    width: 70%;
-    float: none;
-    margin: 0 auto;
-}
-
-aside {
-    width: 70%;
-    float: none;
-    margin: 0 auto;
-}
-
-#hongwu {
-    max-width: 70%;
-    margin: 0 auto;
-    float: none;
-}
-
-nav ul {
-    padding-top: 0;
-}
+  nav ul {
+    padding-top : 0;
+  }
 }
 
 .row {
-    width: 100%;
-    background: #2A2C39;
-	padding: 24px 0;
-    clear: both;
-    margin-top: 100px;
+  width      : 100%;
+  clear      : both;
+  margin-top : 100px;
+  padding    : 24px 0;
+  background : #2A2C39;
 }
