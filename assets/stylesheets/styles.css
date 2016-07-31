@@ -70,6 +70,44 @@ h1 {
 
 /*
   ========================================
+  Footnotes
+  ========================================
+*/
+
+article {
+    counter-reset: footnotes;
+}
+
+a[aria-describedby="footnote-label"] {
+    counter-increment: footnotes;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    outline: none;
+    text-transform: none;
+}
+
+a[aria-describedby="footnote-label"]:hover {
+    text-decoration: none;
+}
+
+a[aria-describedby="footnote-label"]::after {
+    content: '[' counter(footnotes) ']';
+    vertical-align: super;
+    font-size: 0.5em;
+    margin-left: 2px;
+    color: #c90707;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a[aria-describedby="footnote-label"]:focus::after {
+    outline: thin dotted;
+    outline-offset: 2px;
+}
+
+/*
+  ========================================
   Rows
   ========================================
 */
@@ -91,12 +129,13 @@ footer ol {
 */
 
 p {
-  font : 400 16px/24px 'gentium book basic',
+  font : 400 16px 'gentium book basic',
          "KaiTi",
          "楷体",
          "STKaiti",
          "华文楷体",
          sans-serif;
+    line-height: 1.6;
 }
 
 /*
