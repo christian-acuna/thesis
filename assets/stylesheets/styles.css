@@ -60,7 +60,7 @@ h1 {
   background : #fcfaf2;
 }
 
-.page-header {
+.page-header h2 {
   color          : #333;
   border-top     : 1px solid #222;
   text-align     : center;
@@ -70,17 +70,76 @@ h1 {
 
 /*
   ========================================
+  Footnotes
+  ========================================
+*/
+
+article {
+    counter-reset: footnotes;
+}
+
+a[aria-describedby="footnote-label"] {
+    counter-increment: footnotes;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    outline: none;
+    text-transform: none;
+}
+
+a[aria-describedby="footnote-label"]:hover {
+    text-decoration: none;
+}
+
+a[aria-describedby="footnote-label"]::after {
+    content: '[' counter(footnotes) ']';
+    vertical-align: super;
+    font-size: 0.6em;
+    margin-left: 2px;
+    color: #c90707;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a[aria-describedby="footnote-label"]:focus::after {
+    outline: thin dotted;
+    outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-size: 0.8em;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+footer {
+    color: #fcfaf2;
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer ol {
+    width: 70%;
+    padding-left: 0;
+}
+/*
+  ========================================
   Paragraph
   ========================================
 */
 
 p {
-  font : 400 16px/24px 'gentium book basic',
+  font : 400 16px 'gentium book basic',
          "KaiTi",
          "楷体",
          "STKaiti",
          "华文楷体",
          sans-serif;
+    line-height: 1.6;
 }
 
 /*
@@ -177,6 +236,16 @@ span.arrow {
     width  : 70%;
     float  : none;
     margin : 0 auto;
+  }
+
+  footer {
+      width: 70%;
+      padding-left: 0;
+      margin: 0 auto;
+  }
+
+  footer ol {
+      width: 100%;
   }
 
   #hongwu {
